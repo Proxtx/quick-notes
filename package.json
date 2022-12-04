@@ -1,0 +1,25 @@
+{
+  "name": "quick-notes",
+  "version": "1.0.0",
+  "description": "notes that delete themself",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proxtx/quick-notes.git"
+  },
+  "author": "Proxtx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Proxtx/quick-notes/issues"
+  },
+  "homepage": "https://github.com/Proxtx/quick-notes#readme",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.5.6",
+    "@proxtx/material": "^1.2.3"
+  }
+}

@@ -1,0 +1,18 @@
+:host {
+  --accentColor: #45503b;
+  --backgroundColor: #e5ebea;
+  --textColor: #747572;
+  --contentSpacing: 9px;
+}
+
+body {
+  margin: 0;
+}
+
+#app-bar {
+  padding: var(--contentSpacing);
+  position: static;
+  top: 0;
+  left: 0;
+  background-color: var(--accentColor);
+}
