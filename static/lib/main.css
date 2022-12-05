@@ -1,4 +1,4 @@
-:host {
+:root {
   --accentColor: #45503b;
   --backgroundColor: #e5ebea;
   --textColor: #747572;
@@ -7,12 +7,26 @@
 
 body {
   margin: 0;
+  font-family: monospace;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-#app-bar {
-  padding: var(--contentSpacing);
+#appBar {
+  padding: calc(var(--contentSpacing) * 2);
   position: static;
   top: 0;
   left: 0;
   background-color: var(--accentColor);
+  color: white;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+

@@ -1,0 +1,16 @@
+#clearButton {
+  position: absolute;
+  bottom: calc(var(--contentSpacing) * 2);
+  right: calc(var(--contentSpacing) * 2);
+}
+
+#mainEditArea {
+  height: 100%;
+  resize: none;
+  border-radius: 0;
+  padding: var(--contentSpacing);
+}
+
+#mainEditArea:focus {
+  outline: none;
+}
