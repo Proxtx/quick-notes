@@ -16,11 +16,13 @@ body {
 
 #appBar {
   padding: calc(var(--contentSpacing) * 2);
-  position: static;
+  position: relative;
   top: 0;
   left: 0;
   background-color: var(--accentColor);
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 h1,
@@ -29,4 +31,3 @@ h3,
 h4 {
   margin: 0;
 }
-

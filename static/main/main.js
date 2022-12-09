@@ -6,6 +6,12 @@ clearButton.addEventListener("click", () => {
   mainEditArea.value = "";
 });
 
+const saveButton = document.getElementById("saveButton");
+saveButton.addEventListener("click", async () => {
+  await notes.save(cookie.pwd, mainEditArea.value);
+  alert("saved");
+});
+
 mainEditArea.value = await notes.getNotes(cookie.pwd);
 
 let latestValue = mainEditArea.value;

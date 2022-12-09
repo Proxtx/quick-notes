@@ -4,6 +4,12 @@
   right: calc(var(--contentSpacing) * 2);
 }
 
+#saveButton {
+  position: absolute;
+  bottom: calc(var(--contentSpacing) * 2);
+  left: calc(var(--contentSpacing) * 2);
+}
+
 #mainEditArea {
   height: 100%;
   resize: none;
@@ -13,4 +19,11 @@
 
 #mainEditArea:focus {
   outline: none;
+}
+
+#saved {
+  position: absolute;
+  right: var(--contentSpacing);
+  top: 50%;
+  transform: translateY(-50%);
 }
