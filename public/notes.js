@@ -11,7 +11,7 @@ export const auth = (pwd) => {
 
 export const getNotes = (pwd) => {
   if (!auth(pwd)) return;
-  if (Date.now() - updateTime > 1000 * 60 * 60 * 5) notes = "";
+  //if (Date.now() - updateTime > 1000 * 60 * 60 * 5) notes = "";
   return notes;
 };
 
