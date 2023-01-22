@@ -1,7 +1,8 @@
 import config from "@proxtx/config";
 import fs from "fs/promises";
 
-let notes = "";
+let notes = JSON.parse(await fs.readFile("saved.json", "utf8")).liveNotes;
+if (!notes) notes = "";
 let updateTime = Date.now();
 
 export const auth = (pwd) => {
@@ -14,9 +15,12 @@ export const getNotes = (pwd) => {
   return notes;
 };
 
-export const updateNotes = (pwd, updatedNotes) => {
+export const updateNotes = async (pwd, updatedNotes) => {
   if (!auth(pwd)) return;
   notes = updatedNotes;
+  let saved = JSON.parse(await fs.readFile("saved.json", "utf8"));
+  saved.liveNotes = notes;
+  await fs.writeFile("saved.json", JSON.stringify(saved, null, 2));
   updateTime = Date.now();
 };
 
